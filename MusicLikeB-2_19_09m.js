@@ -285,7 +285,7 @@ var ii=this.id == "p1" ? "0" : this.id == "p2" ? "1" : "2",Ni=this.parentNode.na
 new win.Request.JSONP({url:"/main/get-playlist-info",method:"GET",cache:true,data:"json=true&playlistId="+win.Y.player.object.objectId,onSuccess:function(data){
 var viNum=data.videoInfoList.coreVideoInfoList;
 if (!viNum[Ni].videoUrlModels[ii]){win.infoMessage(Yeio,1880);return}
-alert(viNum[Ni].videoUrlModels[ii].videoUrl)
+Lc.href=viNum[Ni].videoUrlModels[ii].videoUrl;
 }}).send();
 });
 });
